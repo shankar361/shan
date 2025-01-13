@@ -11,4 +11,5 @@ class User_input(BaseModel):
 
 @app.post("/calculate")
 def calculatee(input:User_input):
+    print(input)
     return calculate(input.x,input.y,input.options)
