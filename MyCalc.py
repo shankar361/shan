@@ -13,6 +13,6 @@ def calcualate(x:float,y:float,ops:str):
 choice = st.selectbox("Select an operation",['Add','Subtract','Multiply','Divide'])
 x = st.number_input("Enter first value")
 y = st.number_input("Enter second value")
-res = calcualate(x,y,choice)
 if st.button("Calculate"): 
+    res = calcualate(x,y,choice)
     st.subheader(res)
